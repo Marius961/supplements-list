@@ -5,6 +5,8 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Component;
 import ua.supplementsList.dao.interfaces.ClassificationDAO;
 import ua.supplementsList.models.Classification;
@@ -24,11 +26,13 @@ public class ClassificationDAOImpl implements ClassificationDAO {
     }
 
     @Override
-    public void insertClassification(Classification classification) {
+    public int insertClassification(Classification classification) {
         String sql = "INSERT INTO classifications (name) VALUES (:name)";
         MapSqlParameterSource params = new MapSqlParameterSource();
         params.addValue("name", classification.getName());
-        jdbcTemplate.update(sql, params);
+        KeyHolder keyHolder = new GeneratedKeyHolder();
+        jdbcTemplate.update(sql, params, keyHolder);
+        return (int) keyHolder.getKey();
     }
 
     @Override
@@ -36,6 +40,18 @@ public class ClassificationDAOImpl implements ClassificationDAO {
         String sql = "SELECT * FROM classifications WHERE id=:id";
         MapSqlParameterSource params = new MapSqlParameterSource();
         params.addValue("id", id);
+        try {
+            return jdbcTemplate.queryForObject(sql, params, new ClassificationMapper());
+        } catch (EmptyResultDataAccessException e) {
+            return null;
+        }
+    }
+
+    @Override
+    public Classification getClassification(String name) {
+        String sql = "SELECT * FROM classifications WHERE name=:name";
+        MapSqlParameterSource params = new MapSqlParameterSource();
+        params.addValue("name", name);
         try {
             return jdbcTemplate.queryForObject(sql, params, new ClassificationMapper());
         } catch (EmptyResultDataAccessException e) {
@@ -58,6 +74,14 @@ public class ClassificationDAOImpl implements ClassificationDAO {
         MapSqlParameterSource params = new MapSqlParameterSource();
         params.addValue("id", id);
         jdbcTemplate.update(sql, params);
+    }
+
+    @Override
+    public int getClassificationCount(int id) {
+        String sql = "SELECT COUNT(classification_id) FROM supplementInfo WHERE id=:id";
+        MapSqlParameterSource params = new MapSqlParameterSource();
+        params.addValue("id", id);
+        return jdbcTemplate.queryForObject(sql, params, Integer.class);
     }
 
     private static final class ClassificationMapper implements RowMapper<Classification> {

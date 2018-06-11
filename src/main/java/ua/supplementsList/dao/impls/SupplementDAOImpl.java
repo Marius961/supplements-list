@@ -12,6 +12,7 @@ import ua.supplementsList.models.Supplement;
 import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
 @Component
 public class SupplementDAOImpl implements SupplementDAO {
@@ -21,6 +22,16 @@ public class SupplementDAOImpl implements SupplementDAO {
     @Autowired
     private void setDataSource(DataSource dataSource) {
         this.jdbcTemplate = new NamedParameterJdbcTemplate(dataSource);
+    }
+
+    @Override
+    public List<Supplement> getSupplements() {
+        String sql = "SELECT * FROM supplements";
+        try {
+            return jdbcTemplate.query(sql, new SupplementMapper());
+        } catch (EmptyResultDataAccessException e) {
+            return null;
+        }
     }
 
     @Override
