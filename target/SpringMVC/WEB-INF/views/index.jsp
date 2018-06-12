@@ -23,16 +23,21 @@
     <div class="list">
         <c:forEach items="${supplements}" var="supplement">
             <div class="list-elem">
-                <div class="list-col-1">${supplement.code}</div>
-                <div class="list-col-2">${supplement.info.name}</div>
-                <div class="list-col-3">${supplement.info.contents}</div>
-                <div class="list-col-4">${supplement.info.classification.name}</div>
+                <div class="list-col-1" id="code${supplement.id}">${supplement.code}</div>
+                <div class="list-col-2" id="type${supplement.id}">${supplement.info.name}</div>
+                <div class="list-col-3" id="contents${supplement.id}">${supplement.info.contents}</div>
+                <div class="list-col-4" id="stat${supplement.id}">${supplement.info.classification.name}</div>
                 <div class="list-col-img">
-                    <img src="<%=request.getContextPath()%>/resources/images/edit.png" class="col-img-1">
+                    <img src="<%=request.getContextPath()%>/resources/images/edit.png" class="col-img-1" onclick="getEditForm(${supplement.id})">
                 </div>
                 <div class="list-col-img" onclick="location.href='/remove-supplement/${supplement.id}'">
                     <img src="<%=request.getContextPath()%>/resources/images/delete.png" class="col-img-2">
                 </div>
+                <span hidden id="supplId${supplement.id}">${supplement.id}</span>
+                <span hidden id="supplInfoId${supplement.id}">${supplement.info.id}</span>
+                <span hidden id="supplInfoClassId${supplement.id}">${supplement.info.classification.id}</span>
+                <span hidden id="supplInfoId2${supplement.id}">${supplement.infoId}</span>
+                <span hidden id="supplInfoClassId2${supplement.id}">${supplement.info.classificationId}</span>
             </div>
         </c:forEach>
     </div>
@@ -56,7 +61,13 @@
                 <form:label path="info.classification.name" for="supplementStatus">Статус</form:label>
                 <form:input path="info.classification.name" type="text" class="form-control" id="supplementStatus" placeholder="Введіть статус"/>
             </div>
-            <button type="submit" class="btn btn-primary" style="background-color: #cd7700;">Зберегти</button>
+            <form:hidden path="id" id="sId"/>
+            <form:hidden path="info.id" id="infoId"/>
+            <form:hidden path="info.classification.id" id="infoClassId"/>
+            <form:hidden path="infoId" id="infoId2"/>
+            <form:hidden path="info.classificationId" id="classId2"/>
+            <br>
+            <button type="button" class="btn btn-primary" style="background-color: #cd7700;" onclick="validate(this.form)">Зберегти</button>
             <button type="button" class="btn btn-primary" style="border: 1px solid #cd7700; background: #a6a6a6" onclick="displayForm('supplement')">Скасувати</button>
         </form:form>
     </div>

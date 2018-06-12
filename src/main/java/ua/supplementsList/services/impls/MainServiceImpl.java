@@ -76,4 +76,11 @@ public class MainServiceImpl implements MainService {
         supplementDAO.insertSupplement(supplement);
     }
 
+    @Override
+    public void updateSupplement(Supplement supplement) {
+        supplementDAO.updateSupplement(supplement);
+        supplementInfoDAO.updateInfo(supplement.getInfo());
+        classificationDAO.updateClassification(supplement.getInfo().getClassification());
+    }
+
 }

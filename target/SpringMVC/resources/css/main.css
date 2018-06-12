@@ -111,9 +111,14 @@ body {
 .b-popup .b-popup-content{
     margin:40px auto 0 auto;
     width:60%;
-    height: 20%;
+
     padding:10px;
     background-color: #ffffff;
     border-radius:1px;
     box-shadow: 0 0 10px #000;
+}
+
+.error-message {
+    color: red;
+    padding-left: 1%;
 }

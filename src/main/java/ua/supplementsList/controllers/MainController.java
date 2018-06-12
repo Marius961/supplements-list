@@ -37,7 +37,11 @@ public class MainController {
 
     @RequestMapping(value = "/add-supplement", method = RequestMethod.POST)
     public String addSupplement(@ModelAttribute Supplement supplement) {
-        mainService.addSupplement(supplement);
+        if (supplement.getId() == 0) {
+            mainService.addSupplement(supplement);
+        } else {
+            mainService.updateSupplement(supplement);
+        }
         return "redirect:/";
     }
 }

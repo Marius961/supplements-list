@@ -12,4 +12,6 @@ public interface MainService {
     void removeSupplement(int id);
 
     void addSupplement(Supplement supplement);
+
+    void updateSupplement(Supplement supplement);
 }
