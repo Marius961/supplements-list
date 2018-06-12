@@ -14,10 +14,10 @@
 <body>
 <header class="header">
     <div class="header-elem" onclick="displayForm('supplement')">Додати добавку</div>
-    <form style="display: inline-block; float: right; padding: 0.5%">
-        <input type="search" class="search-field">
-        <input type="submit" class="search-btn" value="Знайти">
-    </form>
+    <div style="display: inline-block; float: right; padding: 0.5%">
+        <input type="search" class="search-field" id="requestInput">
+        <input type="button" class="search-btn" value="Знайти" onclick="searchSupplement()">
+    </div>
 </header>
 <main>
     <div class="list">
@@ -44,7 +44,7 @@
 </main>
 <div class="b-popup" id="popup-form-supplement">
     <div class="b-popup-content">
-        <form:form action="/add-supplement" method="post" modelAttribute="supplement">
+        <form:form action="/add-supplement" method="post" modelAttribute="supplement" name="mainForm">
             <div class="form-group">
                 <form:label path="code" for="supplementCode">Код добавки</form:label>
                 <form:input path="code" type="text" class="form-control" id="supplementCode" placeholder="Введіть код добавки"/>
@@ -68,7 +68,7 @@
             <form:hidden path="info.classificationId" id="classId2"/>
             <br>
             <button type="button" class="btn btn-primary" style="background-color: #cd7700;" onclick="validate(this.form)">Зберегти</button>
-            <button type="button" class="btn btn-primary" style="border: 1px solid #cd7700; background: #a6a6a6" onclick="displayForm('supplement')">Скасувати</button>
+            <button type="button" class="btn btn-primary" style="border: 1px solid #cd7700; background: #a6a6a6" onclick="clearForm(this.form)">Скасувати</button>
         </form:form>
     </div>
 </div>

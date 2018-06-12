@@ -81,3 +81,22 @@ function resetError(container) {
         container.removeChild(container.lastChild);
     }
 }
+
+function clearForm(form) {
+    let elems = form.elements;
+    document.getElementById('supplementCode').value = '';
+    document.getElementById('supplementType').value = '';
+    document.getElementById('supplementContents').value = '';
+    document.getElementById('supplementStatus').value = '';
+    resetError(elems["code"].parentNode);
+    resetError(elems["info.name"].parentNode);
+    resetError(elems["info.contents"].parentNode);
+    resetError(elems["info.classification.name"].parentNode);
+    displayForm('supplement');
+}
+
+
+function searchSupplement() {
+    let input = document.getElementById('requestInput');
+    location.href="/" + input.value
+}

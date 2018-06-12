@@ -28,7 +28,15 @@ public class MainServiceImpl implements MainService {
 
     @Override
     public List<Supplement> getSupplements() {
-        List<Supplement> supplements = supplementDAO.getSupplements();
+        return processSupplements(supplementDAO.getSupplements());
+    }
+
+    @Override
+    public List<Supplement> searchSupplements(String request) {
+        return processSupplements(supplementDAO.searchSupplement(request));
+    }
+
+    private List<Supplement> processSupplements(List<Supplement> supplements) {
         for (Supplement supplement: supplements) {
             SupplementInfo info = supplementInfoDAO.getInfo(supplement.getInfoId());
             Classification classification = classificationDAO.getClassification(info.getClassificationId());

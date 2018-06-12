@@ -9,6 +9,8 @@ public interface MainService {
 
     List<Supplement> getSupplements();
 
+    List<Supplement> searchSupplements(String request);
+
     void removeSupplement(int id);
 
     void addSupplement(Supplement supplement);

@@ -20,10 +20,15 @@ public class MainController {
         this.mainService = mainService;
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public ModelAndView getHomePage() {
+    @RequestMapping(value = {"/", "/{request}"}, method = RequestMethod.GET)
+    public ModelAndView getHomePage(@PathVariable(required = false) String request) {
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("supplements", mainService.getSupplements());
+        if (request != null) {
+            System.out.println(request);
+            modelAndView.addObject("supplements", mainService.searchSupplements(request));
+        } else {
+            modelAndView.addObject("supplements", mainService.getSupplements());
+        }
         modelAndView.addObject("supplement", new Supplement());
         modelAndView.setViewName("index");
         return modelAndView;

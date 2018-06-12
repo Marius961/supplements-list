@@ -26,7 +26,9 @@ public class SupplementDAOImpl implements SupplementDAO {
 
     @Override
     public List<Supplement> getSupplements() {
-        String sql = "SELECT * FROM supplements";
+        String sql = "SELECT * FROM supplements s, supplementInfo si, classifications sc " +
+                "WHERE s.info_id=si.id and si.classification_id=sc.id " +
+                "ORDER BY sc.name";
         try {
             return jdbcTemplate.query(sql, new SupplementMapper());
         } catch (EmptyResultDataAccessException e) {
@@ -70,6 +72,20 @@ public class SupplementDAOImpl implements SupplementDAO {
         MapSqlParameterSource params = new MapSqlParameterSource();
         params.addValue("id", id);
         jdbcTemplate.update(sql, params);
+    }
+
+    @Override
+    public  List<Supplement> searchSupplement(String request) {
+        String sql = "SELECT * FROM supplements s, supplementInfo si, classifications sc " +
+                "WHERE s.info_id=si.id and si.classification_id=sc.id and UPPER(s.code) LIKE :code " +
+                "ORDER BY sc.name";
+        MapSqlParameterSource params = new MapSqlParameterSource();
+        params.addValue("code","%" + request.toUpperCase() + "%");
+        try {
+            return jdbcTemplate.query(sql, params, new SupplementMapper());
+        } catch (EmptyResultDataAccessException e) {
+            return null;
+        }
     }
 
     private static final class SupplementMapper implements RowMapper<Supplement> {

@@ -15,4 +15,6 @@ public interface SupplementDAO {
     void updateSupplement(Supplement supplement);
 
     void removeSupplement(int id);
+
+    List<Supplement> searchSupplement(String request);
 }
