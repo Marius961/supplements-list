@@ -1,5 +1,10 @@
 body {
     margin: 0;
+    background: url("../images/b1.jpg") fixed;
+}
+
+html {
+
 }
 
 .list {
@@ -11,13 +16,16 @@ body {
 
 .list-elem {
     margin-top: 0.5%;
-    margin-bottom: 0.5%;
+    margin-bottom: 1.5%;
     display: table;
     width: 100%;
-    border-left: 1.5vh solid #dc3800;
-    border-bottom: 0.5vh solid #dc3800;
+    padding-bottom: 0.5%;
+    box-shadow: 0 0 3px #000;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.55);
 }
+
+
 
 .list-col-1 {
     padding: 0.5%;
@@ -34,7 +42,7 @@ body {
 .list-col-3 {
     padding: 0.5%;
     display: table-cell;
-    width: 60%;
+    width: 56%;
 }
 
 .list-col-4 {
@@ -44,19 +52,19 @@ body {
 }
 
 .list-col-img {
-    padding: 0.5%;
+    padding: 0.5% 1.2% 0 1.2%;
     display: table-cell;
-    width: 5%;
+    width: 7%;
 }
 
 .col-img-1 {
-    width: 2.7vh;
-    height: 2.7vh;
+    width: 2.3vh;
+    height: 2.3vh;
 }
 
 .col-img-2 {
-    width: 3.1vh;
-    height: 3.1vh;
+    width: 3vh;
+    height: 3vh;
 }
 
 .header {
@@ -70,33 +78,47 @@ body {
     text-align: center;
     display: inline-block;
     width: 15%;
+    height: 6%;
     padding: 0.7%;
-    border: 1px solid #cd7700;
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.55);
 }
 
 .header-elem:hover {
     cursor: pointer;
-    color: white;
-    background-color: #cd7700;
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.16);
 }
 
 .search-field {
     width: 59%;
+    height: 6%;
     padding: 2.5%;
     float: left;
+    background-color: rgba(255, 255, 255, 0.16);
+    border: 0;
+    transition: 0.3s;
 }
 
+.search-field:focus {
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.41);
+}
 .search-btn {
     margin-right: 2%;
     width: 38%;
+    height: 6%;
     float: left;
     padding: 2.9%;
-    background-color: transparent;
-    border: 1px solid #cd7700;
+    background-color: rgba(255, 255, 255, 0.55);
+    transition: 0.5s;
+    border: 0;
 }
 
 .search-btn:hover {
     cursor: pointer;
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.16);
 }
 
 .b-popup{
@@ -112,7 +134,7 @@ body {
     margin:40px auto 0 auto;
     width:60%;
     padding:10px;
-    background-color: #ffffff;
+    background-color: #eaeaea;
     border-radius:1px;
     box-shadow: 0 0 10px #000;
 }

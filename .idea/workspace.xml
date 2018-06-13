@@ -7,31 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d49f4d4-f790-499a-892f-79135a02e03f" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/b1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/SupplementsListDB.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/SupplementsListDB.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/supplementsList/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/supplementsList/controllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/supplementsList/dao/impls/SupplementDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/supplementsList/dao/impls/SupplementDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/supplementsList/dao/interfaces/SupplementDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/supplementsList/dao/interfaces/SupplementDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/supplementsList/services/impls/MainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/supplementsList/services/impls/MainServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/supplementsList/services/interfaces/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/supplementsList/services/interfaces/MainService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringMVC/WEB-INF/classes/ua/supplementsList/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVC/WEB-INF/classes/ua/supplementsList/controllers/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVC/WEB-INF/classes/ua/supplementsList/dao/impls/SupplementDAOImpl$SupplementMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVC/WEB-INF/classes/ua/supplementsList/dao/impls/SupplementDAOImpl$SupplementMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVC/WEB-INF/classes/ua/supplementsList/dao/impls/SupplementDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVC/WEB-INF/classes/ua/supplementsList/dao/impls/SupplementDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVC/WEB-INF/classes/ua/supplementsList/dao/interfaces/SupplementDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVC/WEB-INF/classes/ua/supplementsList/dao/interfaces/SupplementDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVC/WEB-INF/classes/ua/supplementsList/services/impls/MainServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVC/WEB-INF/classes/ua/supplementsList/services/impls/MainServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVC/WEB-INF/classes/ua/supplementsList/services/interfaces/MainService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVC/WEB-INF/classes/ua/supplementsList/services/interfaces/MainService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringMVC/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVC/WEB-INF/views/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringMVC/resources/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVC/resources/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVC/resources/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVC/resources/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/supplementsList/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/supplementsList/controllers/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/supplementsList/dao/impls/SupplementDAOImpl$SupplementMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/supplementsList/dao/impls/SupplementDAOImpl$SupplementMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/supplementsList/dao/impls/SupplementDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/supplementsList/dao/impls/SupplementDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/supplementsList/dao/interfaces/SupplementDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/supplementsList/dao/interfaces/SupplementDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/supplementsList/services/impls/MainServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/supplementsList/services/impls/MainServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/supplementsList/services/interfaces/MainService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/supplementsList/services/interfaces/MainService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,19 +46,25 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-              <folding>
-                <element signature="n#style#0;n#form#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="361">
+              <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="138" column="30" lean-forward="true" selection-start-line="138" selection-start-column="30" selection-end-line="138" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
+            <state relative-caret-position="742">
               <caret line="96" selection-start-line="96" selection-end-line="96" />
             </state>
           </provider>
@@ -82,8 +73,8 @@
       <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/supplementsList/controllers/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+            <state relative-caret-position="261">
+              <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -118,14 +109,14 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/supplementsList/dao/impls/SupplementInfoDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/supplementsList/dao/interfaces/ClassificationDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/supplementsList/dao/impls/ClassificationDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/main.css" />
         <option value="$PROJECT_DIR$/src/main/java/ua/supplementsList/dao/interfaces/SupplementDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/supplementsList/services/interfaces/MainService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/supplementsList/dao/impls/SupplementDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/supplementsList/services/impls/MainServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" />
         <option value="$PROJECT_DIR$/src/main/java/ua/supplementsList/controllers/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/main.css" />
       </list>
     </option>
   </component>
@@ -165,9 +156,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -340,9 +330,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
@@ -355,15 +347,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\Idea\SupplementsList\src\main\webapp\resources\images" />
+      <recent name="D:\Projects\Idea\SupplementsList\src\main\webapp\resources\css" />
+      <recent name="D:\Projects\Idea\SupplementsList\src\main\webapp\WEB-INF\views" />
+      <recent name="D:\Projects\Idea\SupplementsList\src\main\webapp\WEB-INF" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\Idea\SupplementsList\src\main\webapp\resources\images" />
       <recent name="D:\Projects\Idea\SupplementsList\src\main\webapp\resources\js" />
       <recent name="D:\Projects\Idea\SupplementsList\src\main\webapp\resources\css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Projects\Idea\SupplementsList\src\main\webapp\resources\css" />
-      <recent name="D:\Projects\Idea\SupplementsList\src\main\webapp\WEB-INF\views" />
-      <recent name="D:\Projects\Idea\SupplementsList\src\main\webapp\WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -512,11 +505,13 @@
       <workItem from="1528736484342" duration="211000" />
       <workItem from="1528740931052" duration="11000" />
       <workItem from="1528789586645" duration="13604000" />
+      <workItem from="1528803950334" duration="124000" />
+      <workItem from="1528874311159" duration="4419000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29442000" />
+    <option name="totallyTimeSpent" value="33985000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1272" height="760" extended-state="6" />
@@ -544,7 +539,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.47572815" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28181818" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29173553" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -568,7 +563,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/ua/supplementsList/controllers/MainController.java</url>
-          <line>43</line>
+          <line>42</line>
           <properties class="ua.supplementsList.controllers.MainController" method="addSupplement">
             <option name="EMULATED" value="true" />
           </properties>
@@ -859,9 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#884#885#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -869,9 +861,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="343" selection-start-line="343" selection-end-line="343" />
-          <folding>
-            <element signature="e#10008#10009#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -879,13 +868,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="1008" selection-start-line="1008" selection-end-line="1008" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="115" column="8" lean-forward="true" selection-start-line="115" selection-start-column="8" selection-end-line="115" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -907,10 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="77">
           <caret line="30" column="64" lean-forward="true" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
-          <folding>
-            <element signature="e#1119#1120#0" expanded="true" />
-            <element signature="e#1192#1193#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -921,27 +899,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="742">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/supplementsList/controllers/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+        <state relative-caret-position="261">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="361">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/main.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
+        <state relative-caret-position="338">
+          <caret line="138" column="30" lean-forward="true" selection-start-line="138" selection-start-column="30" selection-end-line="138" selection-end-column="30" />
         </state>
       </provider>
     </entry>

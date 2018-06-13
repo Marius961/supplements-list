@@ -20,27 +20,46 @@
     </div>
 </header>
 <main>
-    <div class="list">
-        <c:forEach items="${supplements}" var="supplement">
+    <c:if test="${not empty supplements}">
+        <div class="list">
             <div class="list-elem">
-                <div class="list-col-1" id="code${supplement.id}">${supplement.code}</div>
-                <div class="list-col-2" id="type${supplement.id}">${supplement.info.name}</div>
-                <div class="list-col-3" id="contents${supplement.id}">${supplement.info.contents}</div>
-                <div class="list-col-4" id="stat${supplement.id}">${supplement.info.classification.name}</div>
+                <div class="list-col-1">Код</div>
+                <div class="list-col-2">Тип</div>
+                <div class="list-col-3">Вміст / ознаки</div>
+                <div class="list-col-4">Статус</div>
                 <div class="list-col-img">
-                    <img src="<%=request.getContextPath()%>/resources/images/edit.png" class="col-img-1" onclick="getEditForm(${supplement.id})">
                 </div>
-                <div class="list-col-img" onclick="location.href='/remove-supplement/${supplement.id}'">
-                    <img src="<%=request.getContextPath()%>/resources/images/delete.png" class="col-img-2">
+                <div class="list-col-img">
                 </div>
-                <span hidden id="supplId${supplement.id}">${supplement.id}</span>
-                <span hidden id="supplInfoId${supplement.id}">${supplement.info.id}</span>
-                <span hidden id="supplInfoClassId${supplement.id}">${supplement.info.classification.id}</span>
-                <span hidden id="supplInfoId2${supplement.id}">${supplement.infoId}</span>
-                <span hidden id="supplInfoClassId2${supplement.id}">${supplement.info.classificationId}</span>
             </div>
-        </c:forEach>
-    </div>
+            <c:forEach items="${supplements}" var="supplement">
+                <div class="list-elem">
+                    <div class="list-col-1" id="code${supplement.id}">${supplement.code}</div>
+                    <div class="list-col-2" id="type${supplement.id}">${supplement.info.name}</div>
+                    <div class="list-col-3" id="contents${supplement.id}">${supplement.info.contents}</div>
+                    <div class="list-col-4" id="stat${supplement.id}">${supplement.info.classification.name}</div>
+                    <div class="list-col-img">
+                        <img src="<%=request.getContextPath()%>/resources/images/edit.png" class="col-img-1" onclick="getEditForm(${supplement.id})">
+                    </div>
+                    <div class="list-col-img" onclick="location.href='/remove-supplement/${supplement.id}'">
+                        <img src="<%=request.getContextPath()%>/resources/images/delete.png" class="col-img-2">
+                    </div>
+                    <span hidden id="supplId${supplement.id}">${supplement.id}</span>
+                    <span hidden id="supplInfoId${supplement.id}">${supplement.info.id}</span>
+                    <span hidden id="supplInfoClassId${supplement.id}">${supplement.info.classification.id}</span>
+                    <span hidden id="supplInfoId2${supplement.id}">${supplement.infoId}</span>
+                    <span hidden id="supplInfoClassId2${supplement.id}">${supplement.info.classificationId}</span>
+                </div>
+            </c:forEach>
+        </div>
+    </c:if>
+    <c:if test="${empty supplements}">
+        <div class="list">
+            <div class="list-elem">
+                <div class="list-col-1">Немає добавок у списку</div>
+            </div>
+        </div>
+    </c:if>
 </main>
 <div class="b-popup" id="popup-form-supplement">
     <div class="b-popup-content">

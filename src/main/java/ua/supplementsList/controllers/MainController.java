@@ -24,7 +24,6 @@ public class MainController {
     public ModelAndView getHomePage(@PathVariable(required = false) String request) {
         ModelAndView modelAndView = new ModelAndView();
         if (request != null) {
-            System.out.println(request);
             modelAndView.addObject("supplements", mainService.searchSupplements(request));
         } else {
             modelAndView.addObject("supplements", mainService.getSupplements());
