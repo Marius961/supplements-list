@@ -13,7 +13,7 @@
 </head>
 <body>
 <header class="header">
-    <div class="header-elem" onclick="displayForm('supplement')">Додати добавку</div>
+    <button class="header-elem" onclick="displayForm('supplement')">Додати добавку</button>
     <div style="display: inline-block; float: right; padding: 0.5%">
         <input type="search" class="search-field" id="requestInput">
         <input type="button" class="search-btn" value="Знайти" onclick="searchSupplement()">
@@ -26,11 +26,8 @@
                 <div class="list-col-1">Код</div>
                 <div class="list-col-2">Тип</div>
                 <div class="list-col-3">Вміст / ознаки</div>
-                <div class="list-col-4">Статус</div>
-                <div class="list-col-img">
-                </div>
-                <div class="list-col-img">
-                </div>
+                <div class="list-col-4" style="padding-right: 11%">Статус</div>
+
             </div>
             <c:forEach items="${supplements}" var="supplement">
                 <div class="list-elem">

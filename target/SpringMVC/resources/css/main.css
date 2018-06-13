@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    background: url("../images/b1.jpg") fixed;
+    background: url("../images/b1.jpg") no-repeat;
+    background-size: cover;
 }
 
 html {
@@ -81,6 +82,7 @@ html {
     height: 6%;
     padding: 0.7%;
     transition: 0.5s;
+    border: 0;
     background-color: rgba(255, 255, 255, 0.55);
 }
 
